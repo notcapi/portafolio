@@ -39,14 +39,6 @@ export const metadata: Metadata = {
     ],
     locale: siteConfig.locale,
     type: "website"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    site: siteConfig.twitterHandle,
-    creator: siteConfig.twitterHandle,
-    images: [siteConfig.ogImage]
   }
 };
 

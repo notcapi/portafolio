@@ -1,9 +1,8 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 const socials = [
   { href: "https://github.com/notcapi", label: "GitHub", icon: Github },
-  { href: "https://www.linkedin.com/in/borjagalvanchivite", label: "LinkedIn", icon: Linkedin },
-  { href: "https://x.com/notcapi", label: "X", icon: Twitter }
+  { href: "https://www.linkedin.com/in/borja-galv%C3%A1n-chivite-b83976251/", label: "LinkedIn", icon: Linkedin }
 ];
 
 export default function Footer() {

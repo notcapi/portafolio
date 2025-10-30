@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/ThemeToggle";
+import MobileNav from "@/components/MobileNav";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -69,6 +70,7 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <MobileNav />
           <ThemeToggle />
           <Button asChild size="sm" className="hidden md:inline-flex">
             <Link href="/projects">Ver proyectos</Link>

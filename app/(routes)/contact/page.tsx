@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Github, Linkedin, Twitter, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
+import { Github, Linkedin, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -13,9 +13,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
 const socials = [
-  { href: "https://github.com/borjagalvan", label: "GitHub", icon: Github },
-  { href: "https://www.linkedin.com/in/borjagalvan", label: "LinkedIn", icon: Linkedin },
-  { href: "https://x.com/borjagalvan", label: "X (Twitter)", icon: Twitter }
+  { href: "https://github.com/notcapi", label: "GitHub", icon: Github },
+  { href: "https://www.linkedin.com/in/borja-galv%C3%A1n-chivite-b83976251/", label: "LinkedIn", icon: Linkedin }
 ];
 
 // Validation schema (matches API)

@@ -25,9 +25,8 @@ export function getPersonSchema() {
     jobTitle: "AI-assisted App Builder",
     description: siteConfig.description,
     sameAs: [
-      "https://github.com/borjagalvan",
-      "https://www.linkedin.com/in/borjagalvan",
-      "https://x.com/borjagalvan",
+      "https://github.com/notcapi",
+      "https://www.linkedin.com/in/borja-galv%C3%A1n-chivite-b83976251/"
     ],
     knowsAbout: [
       "Artificial Intelligence",

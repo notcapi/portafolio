@@ -6,7 +6,6 @@ export const siteConfig = {
     "Convierto tu idea en MVP funcional en 2-3 semanas usando IA y no-code. Automatización de procesos, chatbots RAG y desarrollo rápido. Freelance especializado en Madrid, España. Primera sesión gratis.",
   url: "https://borjagalvan.dev",
   ogImage: "/og.png",
-  twitterHandle: "@borjagalvan",
   locale: "es_ES"
 };
 
@@ -30,11 +29,6 @@ export const defaultSEO: DefaultSeoProps = {
         alt: siteConfig.name
       }
     ]
-  },
-  twitter: {
-    handle: siteConfig.twitterHandle,
-    site: siteConfig.twitterHandle,
-    cardType: "summary_large_image"
   },
   additionalMetaTags: [
     { name: "theme-color", content: "#0f172a" },
