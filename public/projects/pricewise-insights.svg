@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pw-graph" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#0f172a" />
+  <rect x="150" y="180" width="900" height="540" rx="40" fill="#111c34" />
+  <rect x="210" y="240" width="780" height="160" rx="28" fill="#17254a" />
+  <rect x="210" y="430" width="260" height="230" rx="26" fill="#17254a" />
+  <rect x="500" y="430" width="490" height="230" rx="26" fill="#17254a" />
+  <path d="M530 620 L600 560 L680 610 L760 500 L840 560 L900 470" stroke="url(#pw-graph)" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="760" cy="500" r="20" fill="#38bdf8" />
+  <circle cx="900" cy="470" r="16" fill="#818cf8" />
+  <text x="240" y="305" font-family="'Inter',sans-serif" font-size="34" fill="#e0f2fe">Panel de insights</text>
+  <text x="240" y="345" font-family="'Inter',sans-serif" font-size="22" fill="#cbd5f5">Retención · Elasticidad · Upsell</text>
+</svg>

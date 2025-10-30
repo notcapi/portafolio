@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 7%;
+  --foreground: 210 40% 96%;
+  --card: 222 47% 9%;
+  --card-foreground: 210 40% 96%;
+  --popover: 222 47% 9%;
+  --popover-foreground: 210 40% 96%;
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 96%;
+  --secondary: 222 47% 16%;
+  --secondary-foreground: 210 40% 86%;
+  --muted: 222 47% 18%;
+  --muted-foreground: 214 32% 75%;
+  --accent: 199 89% 48%;
+  --accent-foreground: 210 40% 96%;
+  --destructive: 356 100% 62%;
+  --destructive-foreground: 210 40% 96%;
+  --border: 222 47% 18%;
+  --input: 222 47% 18%;
+  --ring: 199 89% 48%;
+  --radius: 18px;
+}
+
+.light {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 199 89% 48%;
+  --primary-foreground: 210 40% 96%;
+  --secondary: 222 47% 94%;
+  --secondary-foreground: 222 47% 16%;
+  --muted: 222 47% 94%;
+  --muted-foreground: 222 47% 30%;
+  --accent: 199 89% 48%;
+  --accent-foreground: 210 40% 96%;
+  --destructive: 356 100% 42%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 222 47% 88%;
+  --input: 222 47% 88%;
+  --ring: 199 89% 48%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpath fill='none' stroke='%23122340' stroke-width='1' d='M0 0h160v160H0z'/%3E%3C/svg%3E");
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.bg-glass {
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.light .bg-glass {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top, rgba(14, 165, 233, 0.25), transparent 45%),
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.35), transparent 55%);
+}
+
+/* Fallback for framer-motion animations */
+/* Ensures content is visible even if JS fails to load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fallback animation to all elements that might be animated by framer-motion */
+[style*="opacity: 0"] {
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+/* Ensure visibility even if animation doesn't trigger */
+@supports not (animation: fadeInUp) {
+  [style*="opacity: 0"] {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Ensure immediate visibility for reduced motion */
+  [style*="opacity: 0"] {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}

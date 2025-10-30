@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gys" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#gys)" />
+  <rect x="120" y="160" width="960" height="600" rx="40" fill="white" opacity="0.15" />
+  <rect x="200" y="240" width="800" height="420" rx="30" fill="white" opacity="0.12" />
+  <rect x="240" y="280" width="720" height="120" rx="24" fill="white" opacity="0.2" />
+  <rect x="240" y="430" width="320" height="160" rx="24" fill="white" opacity="0.2" />
+  <rect x="600" y="430" width="360" height="160" rx="24" fill="white" opacity="0.2" />
+  <text x="240" y="340" font-family="'Inter',sans-serif" font-size="40" fill="#fff" opacity="0.8">Gym Scheduler</text>
+  <text x="240" y="380" font-family="'Inter',sans-serif" font-size="22" fill="#fff" opacity="0.6">Automatización no-code multisedes</text>
+  <circle cx="960" cy="620" r="90" fill="#fff" opacity="0.15" />
+</svg>

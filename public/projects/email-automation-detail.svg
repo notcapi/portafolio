@@ -1,0 +1,29 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="email-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#0f172a" />
+  <rect x="120" y="140" width="960" height="620" rx="44" fill="url(#email-bg2)" opacity="0.45" />
+  <rect x="180" y="200" width="840" height="500" rx="36" fill="#0f172a" opacity="0.8" />
+  <!-- Webhook trigger -->
+  <rect x="220" y="300" width="200" height="140" rx="28" fill="#111c34" opacity="0.9" />
+  <circle cx="320" cy="370" r="35" fill="#fbbf24" opacity="0.7" />
+  <!-- n8n nodes -->
+  <rect x="460" y="280" width="160" height="80" rx="24" fill="#f59e0b" opacity="0.6" />
+  <rect x="460" y="380" width="160" height="80" rx="24" fill="#111c34" opacity="0.9" />
+  <rect x="460" y="480" width="160" height="80" rx="24" fill="#f59e0b" opacity="0.6" />
+  <!-- Email template -->
+  <rect x="680" y="280" width="280" height="280" rx="30" fill="#111c34" opacity="0.9" />
+  <rect x="720" y="320" width="200" height="40" rx="8" fill="#fbbf24" opacity="0.5" />
+  <rect x="720" y="380" width="180" height="30" rx="6" fill="#fcd34d" opacity="0.4" />
+  <rect x="720" y="430" width="200" height="30" rx="6" fill="#fcd34d" opacity="0.4" />
+  <rect x="720" y="480" width="160" height="30" rx="6" fill="#fcd34d" opacity="0.4" />
+  <!-- Arrows -->
+  <line x1="420" y1="370" x2="460" y2="320" stroke="#fbbf24" stroke-width="6" opacity="0.7" />
+  <line x1="620" y1="420" x2="680" y2="420" stroke="#fbbf24" stroke-width="6" opacity="0.7" />
+  <text x="240" y="310" font-family="'Inter',sans-serif" font-size="32" fill="#fef3c7">Workflow Automation</text>
+  <text x="240" y="350" font-family="'Inter',sans-serif" font-size="20" fill="#fde68a">Trigger → Transform → Send</text>
+</svg>

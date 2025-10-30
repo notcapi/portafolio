@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#111c34" />
+  <circle cx="380" cy="420" r="160" fill="url(#orb)" opacity="0.5" />
+  <circle cx="820" cy="520" r="220" fill="url(#orb)" opacity="0.25" />
+  <rect x="220" y="220" width="760" height="460" rx="40" fill="#0f172a" stroke="#7c3aed" stroke-opacity="0.4" />
+  <rect x="280" y="280" width="640" height="120" rx="26" fill="#1f293f" />
+  <rect x="280" y="430" width="400" height="180" rx="26" fill="#1f293f" />
+  <rect x="700" y="430" width="220" height="180" rx="26" fill="#1f293f" />
+  <text x="300" y="340" font-family="'Inter',sans-serif" font-size="34" fill="#ede9fe">Respuestas contextualizadas</text>
+  <text x="300" y="380" font-family="'Inter',sans-serif" font-size="22" fill="#c7d2fe">Edge Functions · CRM sync</text>
+</svg>

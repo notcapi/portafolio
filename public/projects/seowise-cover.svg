@@ -1,0 +1,30 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="seo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="seo-card" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#c4b5fd" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#0f172a" />
+  <rect x="120" y="140" width="960" height="620" rx="44" fill="url(#seo-bg)" opacity="0.55" />
+  <rect x="180" y="200" width="840" height="500" rx="36" fill="#0f172a" opacity="0.8" />
+  <!-- Search magnifying glass -->
+  <circle cx="320" cy="360" r="80" fill="none" stroke="#a78bfa" stroke-width="12" opacity="0.8" />
+  <line x1="380" y1="420" x2="440" y2="480" stroke="#a78bfa" stroke-width="16" stroke-linecap="round" opacity="0.8" />
+  <!-- Keywords/data bars -->
+  <rect x="520" y="280" width="420" height="60" rx="12" fill="url(#seo-card)" opacity="0.7" />
+  <rect x="520" y="360" width="320" height="60" rx="12" fill="#111c34" opacity="0.9" />
+  <rect x="520" y="440" width="380" height="60" rx="12" fill="url(#seo-card)" opacity="0.6" />
+  <rect x="520" y="520" width="280" height="60" rx="12" fill="#111c34" opacity="0.85" />
+  <rect x="520" y="600" width="360" height="60" rx="12" fill="url(#seo-card)" opacity="0.65" />
+  <!-- Chart elements -->
+  <circle cx="560" cy="310" r="18" fill="#a78bfa" opacity="0.9" />
+  <circle cx="660" cy="470" r="18" fill="#c4b5fd" opacity="0.8" />
+  <circle cx="700" cy="630" r="18" fill="#a78bfa" opacity="0.9" />
+  <text x="240" y="310" font-family="'Inter',sans-serif" font-size="36" fill="#ede9fe">SEOWise</text>
+  <text x="240" y="350" font-family="'Inter',sans-serif" font-size="22" fill="#ddd6fe">Análisis SEO con Scraping + IA</text>
+</svg>

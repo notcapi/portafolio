@@ -1,0 +1,28 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rag-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="rag-card" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#6ee7b7" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#0f172a" />
+  <rect x="120" y="140" width="960" height="620" rx="44" fill="url(#rag-bg)" opacity="0.55" />
+  <rect x="180" y="200" width="840" height="500" rx="36" fill="#0f172a" opacity="0.8" />
+  <!-- Chat bubbles UI -->
+  <rect x="220" y="240" width="520" height="80" rx="40" fill="#111c34" opacity="0.9" />
+  <rect x="260" y="340" width="480" height="80" rx="40" fill="url(#rag-card)" opacity="0.6" />
+  <rect x="220" y="440" width="560" height="80" rx="40" fill="#111c34" opacity="0.9" />
+  <rect x="260" y="540" width="500" height="80" rx="40" fill="url(#rag-card)" opacity="0.6" />
+  <!-- Document icons -->
+  <rect x="820" y="260" width="140" height="180" rx="20" fill="#111c34" opacity="0.9" />
+  <rect x="820" y="460" width="140" height="180" rx="20" fill="#111c34" opacity="0.85" />
+  <!-- AI brain icon -->
+  <circle cx="910" cy="350" r="30" fill="#34d399" opacity="0.8" />
+  <circle cx="890" cy="550" r="24" fill="#6ee7b7" opacity="0.7" />
+  <text x="240" y="310" font-family="'Inter',sans-serif" font-size="36" fill="#d1fae5">RAG Customer Support</text>
+  <text x="240" y="350" font-family="'Inter',sans-serif" font-size="22" fill="#a7f3d0">Asistente IA con documentación interna</text>
+</svg>

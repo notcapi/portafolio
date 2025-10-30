@@ -1,0 +1,33 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="seo-bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="#0f172a" />
+  <rect x="120" y="140" width="960" height="620" rx="44" fill="url(#seo-bg2)" opacity="0.45" />
+  <rect x="180" y="200" width="840" height="500" rx="36" fill="#0f172a" opacity="0.8" />
+  <!-- SERP results visualization -->
+  <rect x="220" y="260" width="380" height="100" rx="20" fill="#111c34" opacity="0.9" />
+  <rect x="240" y="280" width="280" height="25" rx="6" fill="#a78bfa" opacity="0.6" />
+  <rect x="240" y="315" width="320" height="18" rx="4" fill="#c4b5fd" opacity="0.4" />
+
+  <rect x="220" y="380" width="380" height="100" rx="20" fill="#111c34" opacity="0.85" />
+  <rect x="240" y="400" width="300" height="25" rx="6" fill="#a78bfa" opacity="0.5" />
+  <rect x="240" y="435" width="340" height="18" rx="4" fill="#c4b5fd" opacity="0.4" />
+
+  <rect x="220" y="500" width="380" height="100" rx="20" fill="#111c34" opacity="0.8" />
+  <rect x="240" y="520" width="260" height="25" rx="6" fill="#a78bfa" opacity="0.55" />
+  <rect x="240" y="555" width="300" height="18" rx="4" fill="#c4b5fd" opacity="0.4" />
+
+  <!-- Analysis panel -->
+  <rect x="640" y="260" width="320" height="340" rx="28" fill="#111c34" opacity="0.9" />
+  <circle cx="800" cy="360" r="45" fill="#8b5cf6" opacity="0.7" />
+  <rect x="680" y="440" width="240" height="30" rx="8" fill="#a78bfa" opacity="0.5" />
+  <rect x="680" y="490" width="200" height="30" rx="8" fill="#c4b5fd" opacity="0.4" />
+  <rect x="680" y="540" width="220" height="30" rx="8" fill="#a78bfa" opacity="0.45" />
+
+  <text x="240" y="310" font-family="'Inter',sans-serif" font-size="32" fill="#ede9fe">SERP + Content Analysis</text>
+  <text x="240" y="350" font-family="'Inter',sans-serif" font-size="20" fill="#ddd6fe">Python · LLM · Web Scraping</text>
+</svg>

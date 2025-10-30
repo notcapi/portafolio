@@ -1,0 +1,22 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(15,23,42,0.05)" />
+      <stop offset="100%" stop-color="rgba(15,23,42,0.45)" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#g1)" />
+  <rect x="80" y="120" width="1040" height="660" rx="40" fill="white" opacity="0.08" />
+  <rect x="140" y="220" width="360" height="440" rx="30" fill="white" opacity="0.08" />
+  <rect x="540" y="220" width="520" height="120" rx="24" fill="white" opacity="0.12" />
+  <rect x="540" y="360" width="520" height="80" rx="20" fill="white" opacity="0.08" />
+  <rect x="540" y="460" width="520" height="80" rx="20" fill="white" opacity="0.08" />
+  <rect x="540" y="560" width="520" height="100" rx="24" fill="white" opacity="0.12" />
+  <circle cx="320" cy="420" r="82" fill="url(#g2)" />
+  <text x="540" y="330" font-family="'Inter',sans-serif" font-size="42" fill="white" opacity="0.6">FitCoach MVP</text>
+  <text x="540" y="420" font-family="'Inter',sans-serif" font-size="28" fill="white" opacity="0.4">Planes personalizados con IA</text>
+</svg>
