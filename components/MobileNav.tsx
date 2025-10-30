@@ -11,6 +11,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
@@ -40,6 +41,9 @@ export default function MobileNav() {
       <SheetContent side="bottom" className="rounded-t-3xl">
         <SheetHeader>
           <SheetTitle>Navegación</SheetTitle>
+          <SheetDescription>
+            Menú de navegación principal del sitio
+          </SheetDescription>
         </SheetHeader>
         <nav className="mt-6 flex flex-col gap-2">
           {navLinks.map((link) => {
