@@ -97,7 +97,7 @@ export default function CaseStudySection() {
           </div>
         </div>
         <Button asChild variant="outline">
-          <Link href="/projects/rag-customer-support">Ver proyecto completo</Link>
+          <Link href="/projects">Ver más proyectos</Link>
         </Button>
       </div>
     </div>
