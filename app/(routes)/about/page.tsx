@@ -35,14 +35,14 @@ const timeline = [
   },
   {
     title: "Automatizando un gimnasio desde dentro",
-    org: "Forus Las Rozas",
+    org: "Centro deportivo",
     period: "2023 — 2025",
     description:
       "Cansado de responder las mismas preguntas 50 veces al día, creé un chatbot con IA que lee nuestra documentación. También automaticé correos repetitivos y procesos de datos. El equipo recuperó horas cada semana."
   },
   {
     title: "Aprendiendo en primera línea",
-    org: "Forus Las Rozas",
+    org: "Centro deportivo",
     period: "2017 — Actualidad",
     description:
       "Empecé atendiendo clientes, gestionando cobros y resolviendo incidencias. Vi los problemas reales de un negocio operando cada día. Esa perspectiva me permite construir soluciones que realmente funcionan."
@@ -96,7 +96,7 @@ export default function AboutPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold">Cómo trabajo</h2>
             <p className="text-base text-muted-foreground leading-relaxed">
-              Durante años trabajando en Forus Las Rozas, vi cómo los procesos manuales consumían
+              Durante años trabajando en un centro deportivo, vi cómo los procesos manuales consumían
               tiempo valioso. Empecé a automatizar tareas repetitivas, a responder consultas con IA,
               y a construir herramientas que resolvían problemas reales.
             </p>
