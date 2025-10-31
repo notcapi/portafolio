@@ -57,33 +57,38 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="max-w-2xl space-y-6"
+            className="max-w-2xl space-y-7 md:space-y-6"
           >
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary shadow-sm">
               <Sparkles className="h-3 w-3" aria-hidden="true" />
               Disponible para colaboraciones 2025
             </span>
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-              Desarrollo MVPs en 2 Semanas con IA | Freelance Madrid
-            </h1>
-            <p className="text-xl font-medium text-muted-foreground">
+            <div className="space-y-3">
+              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+                Desarrollo MVPs en 2 Semanas con IA
+              </h1>
+              <p className="text-lg font-medium text-muted-foreground sm:text-xl">
+                Freelance Developer · Madrid
+              </p>
+            </div>
+            <p className="text-lg font-medium text-foreground/90 sm:text-xl">
               Convierto ideas en productos funcionales usando IA
+            </p>
+            <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
+              Tu idea funcionando en navegador en 2 semanas. Sin equipo completo, sin meses de espera.
+              Uso IA, código y no-code para elegir siempre la ruta más rápida al mercado.
             </p>
             <p className="text-sm text-muted-foreground/70">
               AI-assisted App Builder · No-Code/Low-Code Developer
             </p>
-            <p className="max-w-xl text-lg text-muted-foreground/90">
-              Tu idea funcionando en navegador en 2 semanas. Sin equipo completo, sin meses de espera.
-              Uso IA, código y no-code para elegir siempre la ruta más rápida al mercado.
-            </p>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button asChild size="lg" className="gap-2">
+            <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
+              <Button asChild size="lg" className="h-12 gap-2 px-6">
                 <Link href="#destacados">
                   Ver proyectos
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
               </Button>
-              <Button asChild variant="ghost" size="lg">
+              <Button asChild variant="outline" size="lg" className="h-12 px-6">
                 <Link href="/contact">Agenda una llamada</Link>
               </Button>
             </div>
@@ -92,9 +97,9 @@ export default function HomePage() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-            className="mx-auto w-full max-w-md rounded-3xl border border-border/40 bg-glass p-6 shadow-glass backdrop-blur-lg"
+            className="mx-auto w-full max-w-md rounded-3xl border border-border/40 bg-glass p-8 shadow-glass backdrop-blur-lg"
           >
-            <dl className="grid grid-cols-2 gap-6 text-sm">
+            <dl className="grid grid-cols-2 gap-8 text-sm">
               <div>
                 <dt className="text-muted-foreground">Prototipos validados</dt>
                 <dd className="mt-1 text-2xl font-semibold text-primary">18 de 25+</dd>
@@ -127,7 +132,7 @@ export default function HomePage() {
       <Section id="destacados" className="bg-background/60">
         <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight">Proyectos destacados</h2>
+            <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Proyectos destacados</h2>
             <p className="mt-2 max-w-2xl text-base text-muted-foreground">
               Ejemplos reales de MVPs con IA: chatbots RAG, automatización con n8n y Supabase,
               scrapers en Python, análisis SEO y plataformas Next.js. Desarrollados en 2-3 semanas
@@ -141,7 +146,7 @@ export default function HomePage() {
             </Link>
           </Button>
         </div>
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-8 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

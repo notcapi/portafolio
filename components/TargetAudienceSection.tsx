@@ -27,7 +27,7 @@ export default function TargetAudienceSection() {
   return (
     <div className="space-y-8">
       <div className="text-center">
-        <h2 className="text-3xl font-semibold tracking-tight">Para quién es esto</h2>
+        <h2 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Para quién es esto</h2>
         <p className="mt-2 text-base text-muted-foreground">
           Soluciones específicas para cada tipo de proyecto
         </p>
@@ -39,7 +39,7 @@ export default function TargetAudienceSection() {
           return (
             <div
               key={audience.title}
-              className="group relative rounded-2xl border border-border/40 bg-glass p-8 shadow-glass backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-glass-lg"
+              className="group relative rounded-2xl border border-border/40 bg-glass p-6 shadow-glass backdrop-blur-sm transition-all hover:border-primary/50 hover:shadow-glass-lg md:p-8"
             >
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/20">
                 <Icon className="h-7 w-7 text-primary" aria-hidden="true" />

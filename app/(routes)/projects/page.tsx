@@ -19,10 +19,10 @@ export default function ProjectsPage() {
   return (
     <Section>
       <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
-        <span className="rounded-full border border-primary/30 bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-primary">
+        <span className="rounded-full border border-primary/30 bg-primary/10 px-5 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-primary shadow-sm">
           Showcase
         </span>
-        <h1 className="text-4xl font-semibold tracking-tight">Proyectos de IA y Automatización</h1>
+        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Proyectos de IA y Automatización</h1>
         <p className="text-base text-muted-foreground">
           Selección curada de productos, automatizaciones y herramientas generativas. Cada
           caso incluye stack, descripción en markdown y enlaces clave.
