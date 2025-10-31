@@ -16,6 +16,7 @@ function getResend() {
 const contactSchema = z.object({
   name: z.string().min(2, "El nombre debe tener al menos 2 caracteres").max(100),
   email: z.string().email("Email inválido"),
+  phone: z.string().min(9, "El teléfono debe tener al menos 9 dígitos").max(20).optional().or(z.literal("")),
   company: z.string().max(100).optional(),
   message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres").max(5000),
   // Honeypot field for spam protection
@@ -85,7 +86,7 @@ function getClientIdentifier(request: NextRequest): string {
 /**
  * Email template
  */
-function generateEmailHTML(name: string, email: string, message: string, company?: string): string {
+function generateEmailHTML(name: string, email: string, message: string, phone?: string, company?: string): string {
   return `
 <!DOCTYPE html>
 <html lang="es">
@@ -134,6 +135,16 @@ function generateEmailHTML(name: string, email: string, message: string, company
                           </p>
                         </td>
                       </tr>
+                      ${phone ? `
+                      <tr>
+                        <td style="padding: 8px 0;">
+                          <strong style="color: #374151; font-size: 14px;">Teléfono:</strong>
+                          <p style="margin: 4px 0 0; color: #111827; font-size: 16px;">
+                            <a href="tel:${phone}" style="color: #667eea; text-decoration: none;">${phone}</a>
+                          </p>
+                        </td>
+                      </tr>
+                      ` : ''}
                       ${company ? `
                       <tr>
                         <td style="padding: 8px 0;">
@@ -235,7 +246,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const { name, email, company, message, website } = validationResult.data;
+    const { name, email, phone, company, message, website } = validationResult.data;
 
     // Honeypot check (spam protection)
     if (website) {
@@ -247,12 +258,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email via Resend
-    const emailHTML = generateEmailHTML(name, email, message, company);
+    const emailHTML = generateEmailHTML(name, email, message, phone, company);
     const emailText = `
 Nuevo mensaje de contacto
 
 Nombre: ${name}
 Email: ${email}
+${phone ? `Teléfono: ${phone}` : ''}
 ${company ? `Empresa: ${company}` : ''}
 
 Mensaje:

@@ -21,6 +21,7 @@ const socials = [
 const contactSchema = z.object({
   name: z.string().min(2, "El nombre debe tener al menos 2 caracteres").max(100),
   email: z.string().email("Email inválido"),
+  phone: z.string().min(9, "El teléfono debe tener al menos 9 dígitos").max(20).optional().or(z.literal("")),
   company: z.string().max(100).optional(),
   message: z.string().min(10, "El mensaje debe tener al menos 10 caracteres").max(5000),
   website: z.string().max(0).optional(), // Honeypot field
@@ -44,6 +45,7 @@ export default function ContactPage() {
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       company: "",
       message: "",
       website: "",
@@ -206,6 +208,27 @@ export default function ContactPage() {
             {errors.email && (
               <p id="email-error" className="text-sm text-destructive" role="alert">
                 {errors.email.message}
+              </p>
+            )}
+          </div>
+
+          {/* Phone field (optional) */}
+          <div className="grid gap-2 text-left">
+            <Label htmlFor="phone">
+              Teléfono <span className="text-xs text-muted-foreground">(opcional)</span>
+            </Label>
+            <Input
+              id="phone"
+              type="tel"
+              placeholder="+34 600 000 000"
+              autoComplete="tel"
+              aria-invalid={errors.phone ? "true" : "false"}
+              aria-describedby={errors.phone ? "phone-error" : undefined}
+              {...register("phone")}
+            />
+            {errors.phone && (
+              <p id="phone-error" className="text-sm text-destructive" role="alert">
+                {errors.phone.message}
               </p>
             )}
           </div>

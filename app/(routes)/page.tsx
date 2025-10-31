@@ -172,7 +172,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-semibold">¿Listo para validar tu idea en 3 semanas?</h3>
               <p className="mt-2 max-w-xl text-base text-muted-foreground">
                 Siguiente paso: sesión gratuita de 30 min para mapear tu MVP.
-                Agenda disponible hasta mayo 2025.
+                Agenda disponible hasta marzo 2026.
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
