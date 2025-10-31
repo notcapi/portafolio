@@ -31,8 +31,7 @@ export default function Section({
       <div className="container">
         <motion.div
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          animate="visible"
           variants={variants}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >

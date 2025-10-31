@@ -29,8 +29,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
     <>
       <motion.article
         initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-50px" }}
+        animate={{ opacity: 1, y: 0 }}
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 300, damping: 20, duration: 0.5 }}
         className={cn("group", className)}
