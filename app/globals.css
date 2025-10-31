@@ -100,13 +100,13 @@ body::before {
   }
 }
 
-/* Apply fallback animation to all elements that might be animated by framer-motion */
-[style*="opacity: 0"] {
+/* Remove this rule as it causes flickering on scroll */
+/* [style*="opacity: 0"] {
   animation: fadeInUp 0.6s ease-out forwards;
   animation-delay: 0.1s;
-}
+} */
 
-/* Ensure visibility even if animation doesn't trigger */
+/* Ensure visibility for better UX */
 @supports not (animation: fadeInUp) {
   [style*="opacity: 0"] {
     opacity: 1 !important;

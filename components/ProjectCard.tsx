@@ -28,6 +28,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
   return (
     <>
       <motion.article
+        initial={{ opacity: 1 }}
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className={cn("group", className)}
@@ -41,11 +42,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
           className="flex h-full flex-col overflow-hidden border border-border/30 bg-background/70 transition hover:border-primary/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <div className="relative overflow-hidden">
-            <motion.div
-              className="relative"
-              whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 120, damping: 18 }}
-            >
+            <div className="relative">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
                   src={project.cover}
@@ -57,7 +54,7 @@ export default function ProjectCard({ project, className }: ProjectCardProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent" />
               </div>
-            </motion.div>
+            </div>
           </div>
           <CardContent className="flex flex-1 flex-col gap-3 px-6 py-6">
             <div>
