@@ -3,6 +3,8 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { Resend } from "resend";
 
+// Last updated: 2025-11-02 - Fixed Resend API key configuration
+
 // Lazy initialize Resend to avoid build-time errors
 let resend: Resend | null = null;
 function getResend() {
