@@ -198,20 +198,12 @@ function generateEmailHTML(name: string, email: string, message: string, phone?:
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if contact form is enabled
-    if (process.env.NEXT_PUBLIC_ENABLE_CONTACT_FORM !== "true") {
-      return NextResponse.json(
-        { error: "El formulario de contacto está deshabilitado" },
-        { status: 503 }
-      );
-    }
-
     // Check required environment variables
     if (!process.env.RESEND_API_KEY || !process.env.CONTACT_EMAIL_TO) {
       console.error("Missing required environment variables: RESEND_API_KEY or CONTACT_EMAIL_TO");
       return NextResponse.json(
-        { error: "Error de configuración del servidor" },
-        { status: 500 }
+        { error: "El formulario de contacto no está configurado correctamente" },
+        { status: 503 }
       );
     }
 
