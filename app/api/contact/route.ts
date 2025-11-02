@@ -268,6 +268,7 @@ Este mensaje fue enviado desde el formulario de contacto de ma6r.dev
 
     const resendClient = getResend();
     if (!resendClient) {
+      console.error("Resend client initialization failed - check RESEND_API_KEY");
       throw new Error("Resend client not initialized");
     }
 
@@ -283,9 +284,23 @@ Este mensaje fue enviado desde el formulario de contacto de ma6r.dev
 
     // Check if email was sent successfully
     if (resendError || !data) {
-      console.error("Resend error:", resendError);
-      throw new Error("Failed to send email");
+      console.error("Resend API error details:", {
+        errorName: resendError?.name,
+        errorMessage: resendError?.message,
+        statusCode: (resendError as any)?.statusCode,
+        from: "contacto@ma6r.dev",
+        to: process.env.CONTACT_EMAIL_TO,
+      });
+
+      // Provide more specific error feedback based on error type
+      if (resendError?.name === 'validation_error') {
+        throw new Error(`Validation error: ${resendError.message}`);
+      }
+
+      throw new Error(`Failed to send email: ${resendError?.message || 'Unknown error'}`);
     }
+
+    console.log("Email sent successfully:", data.id);
 
     return NextResponse.json(
       {
