@@ -1,8 +1,21 @@
 # Troubleshooting: Formulario de Contacto en Producción
 
-## El Problema
+## ✅ RESUELTO - 2 de noviembre de 2025
 
-El formulario de contacto muestra el error: "Error al enviar el mensaje. Por favor, intenta de nuevo o contáctame directamente."
+**El problema estaba en dos lugares:**
+1. La API key de Resend en Vercel era diferente a la de local (y posiblemente inválida)
+2. La variable `CONTACT_EMAIL_TO` tenía un salto de línea (`\n`) al final, causando un error de validación
+
+**Solución aplicada:**
+- Actualizada `RESEND_API_KEY` en todos los entornos de Vercel (Production, Preview, Development)
+- Corregida `CONTACT_EMAIL_TO` eliminando el salto de línea
+- El formulario ahora funciona correctamente ✅
+
+---
+
+## El Problema Original
+
+El formulario de contacto mostraba el error: "Error al enviar el mensaje. Por favor, intenta de nuevo o contáctame directamente."
 
 ## Causas Comunes
 
