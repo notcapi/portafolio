@@ -21,26 +21,27 @@ export const projects: Project[] = [
   {
     id: "sala-the-project",
     title: "Sala The Project",
-    summary: "Landing page experiencial y de alto rendimiento desarrollada con React 19 y Vite",
-    descriptionMD: `### Sala The Project – Desarrollo Web & UI
+    summary: "Plataforma de reservas a medida con sincronización en tiempo real con Google Calendar",
+    descriptionMD: `### Sala The Project – Plataforma de Reservas
     
-Desarrollo de una experiencia web moderna para digitalizar la presencia de un estudio exclusivo en Madrid. El objetivo fue trasladar la estética minimalista y premium del espacio físico al entorno digital mediante una interfaz pulida y performante.
+Aplicación web a medida para la gestión integral de reservas del Estudio Puente de Segovia. Centraliza la experiencia desde la visualización del espacio hasta la confirmación, con disponibilidad en tiempo real y notificaciones automatizadas.
 
-**Aspectos Técnicos Destacados:**
-- **Arquitectura SPA:** Construida con React 19 y Vite para una navegación instantánea y sin recargas.
-- **Diseño System:** Implementación de estilos con Tailwind CSS, priorizando la consistencia visual y el diseño responsive.
-- **Performance:** Optimización de Core Web Vitals y carga eficiente de recursos multimedia.
-- **UX/UI:** Interfaz centrada en la conversión, con llamadas a la acción claras y una galería visual inmersiva.
-    
+**Funcionalidades Destacadas:**
+- **Motor de Reservas Inteligente:** Precios dinámicos, bloqueo automático en Google Calendar y validación de estancias mínimas.
+- **Gestión Automatizada:** Emails transaccionales con Resend y lógica serverless para validaciones complejas.
+- **UX Inmersiva & i18n:** Galería interactiva, diseño de alto impacto y soporte multi-idioma (i18next).
+- **Reto Técnico:** Sincronización bidireccional de calendarios manejando zonas horarias con precisión absoluta.
+
 **Stack Tecnológico:**
-- **Frontend:** React 19, Vite
-- **Estilos:** Tailwind CSS
-- **Despliegue:** Vercel
+- **Core:** React 19, TypeScript, Vite
+- **Backend:** Vercel Serverless, Node.js
+- **Integraciones:** Google Calendar API, Resend
+- **Estilos:** Tailwind CSS v4
     
 **Rol:** Desarrollo Web Integral (Full Stack & UI).`,
     cover: "/projects/sala-the-project-cover.png",
     images: ["/projects/sala-the-project-cover.png"],
-    tags: ["React 19", "Vite", "Tailwind CSS"],
+    tags: ["React 19", "Google Calendar API", "Vercel Serverless", "Tailwind CSS", "Resend", "i18next"],
     category: "Web",
     links: {
       demo: "https://salatheproject.com"
