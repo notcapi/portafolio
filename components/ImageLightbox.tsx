@@ -42,7 +42,7 @@ export default function ImageLightbox({ project, open, onOpenChange }: ImageLigh
             {project.links.demo && (
               <Button asChild>
                 <a href={project.links.demo} target="_blank" rel="noreferrer">
-                  Ver demo
+                  Visitar web
                 </a>
               </Button>
             )}

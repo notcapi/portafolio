@@ -38,8 +38,8 @@ Desarrollo de una experiencia web moderna para digitalizar la presencia de un es
 - **Despliegue:** Vercel
     
 **Rol:** Desarrollo Frontend & UI.`,
-    cover: "/projects/sala-the-project-cover.jpg",
-    images: ["/projects/sala-the-project-cover.jpg"],
+    cover: "/projects/sala-the-project-cover.png",
+    images: ["/projects/sala-the-project-cover.png"],
     tags: ["React 19", "Vite", "Tailwind CSS"],
     category: "Web",
     links: {
@@ -104,9 +104,9 @@ Plataforma "all-in-one" que funciona como marketplace para conectar entrenadores
     
 **Rol:** Product Builder & Full-Stack Developer.
     
-**Estado:** MVP operativo en fase de captación.`,
+**Estado:** MVP en fase de desarrollo.`,
     cover: "/projects/fitcoach-mvp-cover.png",
-    images: ["/projects/fitcoach-mvp.svg", "/projects/fitcoach-mvp-detail.svg"],
+    images: ["/projects/fitcoach-mvp-cover.png", "/projects/fitcoach-mvp-detail.svg"],
     tags: ["Next.js", "Supabase", "Tailwind", "n8n", "PostHog", "OpenAI"],
     category: "Web",
     links: {
