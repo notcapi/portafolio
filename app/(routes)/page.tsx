@@ -23,6 +23,7 @@ import {
 } from "@/lib/structured-data";
 
 const featuredProjectIds = [
+  "sala-the-project",
   "pricewise",
   "fitcoach-mvp",
   "rag-customer-support",

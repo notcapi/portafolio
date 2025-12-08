@@ -19,6 +19,34 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "sala-the-project",
+    title: "Sala The Project",
+    summary: "Landing page experiencial y de alto rendimiento desarrollada con React 19 y Vite",
+    descriptionMD: `### Sala The Project – Desarrollo Web & UI
+    
+Desarrollo de una experiencia web moderna para digitalizar la presencia de un estudio exclusivo en Madrid. El objetivo fue trasladar la estética minimalista y premium del espacio físico al entorno digital mediante una interfaz pulida y performante.
+
+**Aspectos Técnicos Destacados:**
+- **Arquitectura SPA:** Construida con React 19 y Vite para una navegación instantánea y sin recargas.
+- **Diseño System:** Implementación de estilos con Tailwind CSS, priorizando la consistencia visual y el diseño responsive.
+- **Performance:** Optimización de Core Web Vitals y carga eficiente de recursos multimedia.
+- **UX/UI:** Interfaz centrada en la conversión, con llamadas a la acción claras y una galería visual inmersiva.
+    
+**Stack Tecnológico:**
+- **Frontend:** React 19, Vite
+- **Estilos:** Tailwind CSS
+- **Despliegue:** Vercel
+    
+**Rol:** Desarrollo Frontend & UI.`,
+    cover: "/projects/sala-the-project-cover.jpg",
+    images: ["/projects/sala-the-project-cover.jpg"],
+    tags: ["React 19", "Vite", "Tailwind CSS"],
+    category: "Web",
+    links: {
+      demo: "https://salatheproject.com"
+    }
+  },
+  {
     id: "pricewise",
     title: "PriceWise",
     summary: "Scraping y comparador de precios con seguimiento automático y alertas",
