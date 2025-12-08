@@ -113,7 +113,7 @@ MVP completo para gestión integral de entrenadores y clientes + portal público
 **Rol:** Product builder · Full-stack funcional.
 
 **Estado:** MVP funcional con desarrollo continuo.`,
-    cover: "/projects/fitcoach-mvp.svg",
+    cover: "/projects/fitcoach-mvp-cover.png",
     images: ["/projects/fitcoach-mvp.svg", "/projects/fitcoach-mvp-detail.svg"],
     tags: ["Next.js", "Supabase", "Tailwind", "n8n", "PostHog", "OpenAI"],
     category: "Web",
