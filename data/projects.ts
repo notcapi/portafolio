@@ -80,39 +80,31 @@ Herramienta de scraping para encontrar mejores precios en la web con exportació
   {
     id: "fitcoach-mvp",
     title: "FitCoach MVP",
-    summary: "Plataforma completa de gestión para entrenadores y clientes con waitlist integrada",
-    descriptionMD: `### FitCoach – Plataforma de Gestión Fitness
+    summary: "Marketplace que conecta entrenadores personales con clientes + suite de gestión integral",
+    descriptionMD: `### FitCoach – Marketplace de Entrenadores Personales
+    
+Plataforma "all-in-one" que funciona como marketplace para conectar entrenadores con clientes y como suite de gestión para el día a día del coaching.
 
-MVP completo para gestión integral de entrenadores y clientes + portal público para captación.
+**Propuesta de Valor:**
+- **Marketplace:** Directorio donde los clientes encuentran a su entrenador ideal.
+- **Gestión:** Herramientas profesionales para que los entrenadores gestionen sus asesorías (pagos, rutinas, chats).
+- **Captación:** Sistema integrado de waitlist y onboarding de nuevos usuarios.
 
-**Funcionalidades core:**
-- Gestión de roles (entrenador/cliente/admin)
+**Funcionalidades Core:**
+- Matching inteligente Entrenador-Cliente
+- Gestión de suscripciones y pagos
 - Planificación de entrenamientos y nutrición
-- Calendario inteligente de sesiones con disponibilidad compartida
-- Comunicación básica entrenador-cliente
-- Portal público con waitlist para captación de usuarios
-
-**Stack técnico:**
-- Frontend: Next.js 15 con App Router
-- Base de datos: Supabase (auth + database)
-- Estilos: Tailwind CSS
-- Automatizaciones: n8n para emails
-- Analytics: PostHog para funnels y eventos
-- Deploy: Vercel con variables de entorno
-
-**UX/UI:**
-- Diseño minimalista y limpio
-- Inspiración: OpenAI, Harbiz
-- Responsive y accesible
-
-**DevOps:**
-- Rama separada para waitlist pública
-- Resolución de errores de build en Vercel
-- Variables de entorno por ambiente
-
-**Rol:** Product builder · Full-stack funcional.
-
-**Estado:** MVP funcional con desarrollo continuo.`,
+- Chat en tiempo real y seguimiento de progreso
+    
+**Stack Técnico:**
+- **Frontend:** Next.js 15 (App Router)
+- **Backend:** Supabase (Auth, DB y Realtime)
+- **Automatización:** n8n para flujos de email marketing
+- **Analítica:** PostHog para seguimiento de conversión
+    
+**Rol:** Product Builder & Full-Stack Developer.
+    
+**Estado:** MVP operativo en fase de captación.`,
     cover: "/projects/fitcoach-mvp-cover.png",
     images: ["/projects/fitcoach-mvp.svg", "/projects/fitcoach-mvp-detail.svg"],
     tags: ["Next.js", "Supabase", "Tailwind", "n8n", "PostHog", "OpenAI"],
