@@ -68,7 +68,7 @@ export default function AboutPage() {
         >
           <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-primary/40 shadow-glow">
             <Image
-              src="/avatar.svg"
+              src="/avatar.jpg"
               alt="Retrato de Borja Galván"
               fill
               className="object-cover"
