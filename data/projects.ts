@@ -37,7 +37,7 @@ Desarrollo de una experiencia web moderna para digitalizar la presencia de un es
 - **Estilos:** Tailwind CSS
 - **Despliegue:** Vercel
     
-**Rol:** Desarrollo Frontend & UI.`,
+**Rol:** Desarrollo Web Integral (Full Stack & UI).`,
     cover: "/projects/sala-the-project-cover.png",
     images: ["/projects/sala-the-project-cover.png"],
     tags: ["React 19", "Vite", "Tailwind CSS"],
