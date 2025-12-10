@@ -80,7 +80,7 @@ Herramienta de scraping para encontrar mejores precios en la web con exportació
   },
   {
     id: "fitcoach-mvp",
-    title: "FitCoach MVP",
+    title: "FitCoach",
     summary: "Marketplace que conecta entrenadores personales con clientes + suite de gestión integral",
     descriptionMD: `### FitCoach – Marketplace de Entrenadores Personales
     
@@ -106,8 +106,8 @@ Plataforma "all-in-one" que funciona como marketplace para conectar entrenadores
 **Rol:** Product Builder & Full-Stack Developer.
     
 **Estado:** MVP en fase de desarrollo.`,
-    cover: "/projects/fitcoach-mvp-cover.png",
-    images: ["/projects/fitcoach-mvp-cover.png", "/projects/fitcoach-mvp-detail.svg"],
+    cover: "/projects/fitcoach-main-update.png",
+    images: ["/projects/fitcoach-main-update.png", "/projects/fitcoach-mvp-detail.svg"],
     tags: ["Next.js", "Supabase", "Tailwind", "n8n", "PostHog", "OpenAI"],
     category: "Web",
     links: {
